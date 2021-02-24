@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcube</title>
+    <script type="text/javascript" src="classes.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="content-wrapper">
+        <div id="header-wrapper">
+          <div id="header" 	class="container">
+            <div id="logo">
+              <h1>Bitcube-ED</h1>
+              <p>Designed by cameron</p>
+            </div>
+            <h2 id="logOut" onclick="location.reload()"><u>Log Out</u></h2>
+          </div>
+        </div>
+        <div class="page">
+          <div id="loginPage" class="container">
+            <div id="details" class="container">
+              <ul>
+                <h3><u>Lecturer Emails</u></h3>
+                <li>jennyd@mail.com</li>
+                <li>adame@mail.com</li>
+                <h3><u>Password for All</u></h3>
+                <li>bitcubeEval</li>
+              </ul>
+            </div>
+            <div class="container">
+              <h2>Login</h2>
+
+              <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+              </div>
+
+              <form id="login-form">
+                <div class="inputs">
+                  <input type="text" name="email" id="email-field" class="login-form-field" placeholder="Email">
+                  <label for="email"><b>Email Address</b></label>
+                </div>
+                <div class="inputs">
+                  <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                  <label for="password"><b>Password</b></label>
+                </div>
+
+                <input type="submit" value="Login" id="login-form-submit">
+              </form>
+            </div>
+          </div>
+          <div>
+            <h1 id="login-confirmed"></h1>
+          </div>
+          <div class="column1">
+            <h2 id="student-button" onclick="StudentShow()">Show Students</h2>
+            <div id="studentCards">
+            </div>
+          </div>
+
+          <div class="column2">
+            <h2 id="degree-button" onclick="DegreeShow()">Show Degrees</h2>
+            <div id="degreeCards">
+            </div>
+          </div>
+
+          <div class="column3">
+            <h2 id="course-button">Courses</h2>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <p>&copy;All rights reserved. Design by Cameron Rampersad. <a href="mailto:cameronrampersad@gmail.com">Contact us on email</a></p>
+      </div>
+    </div>
+  </body>
+</html>
